@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #div1 {width:200px; height: 100px; background: #ccc; border: 1px solid #999; display: none}
+    #div2 {width:200px; height: 200px; background: red; border: 2px solid black; display: block}
+  </style>
+  <script>
+    window.onload = function() {
+      var oInput = document.getElementById("input");
+      var oDiv = document.getElementById("div1");
+      var btn = document.getElementById("btn");
+      var btn1 = document.getElementById("btn1");
+      var oDiv1 = document.getElementById("div2");
+      btn1.onclick = function() {
+        if (oDiv1.style.background == 'red') {
+          oDiv1.style.background = 'green';
+        } else {
+          oDiv1.style.background = 'red';
+        }
+      }
+      btn.onclick = function() {
+        //alert(val);
+        if (val == 1) {
+          oDiv.style.display = 'none';
+          val = 0;
+        }
+        else {
+          oDiv.style.display = 'block';
+          val++;
+        }
+      }
+      oInput.onmouseover = function() {
+        oDiv.style.display = 'block';
+      }
+      oInput.onmouseout = function() {
+        oDiv.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="checkbox" id = 'input'/>
+  <input type="button" id = 'btn' value = "show"/>
+  <input type="button" id = 'btn1' value = "toGreen"/>
+  <div id="div1">hello</div>
+  <div id="div2">xxx</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; //for IE6/IE7
+}
+
+
+#header {
+  color: blue;
+  position: relative;
+}
+
+.footer {
+  color: red;
+  font-size: 20px;
+  width: 900px;
+  background: #3B9CAE;
+  margin: 0 auto;
+}
+
+.footer-section {
+  float: left;
+}
+
+.font {
+  color: red;
+  font-size: 30px;
+  border: 10px;
+}
+
+.block1 {
+    width: 300px;
+    height: 900px;
+    background: #1b39ab;
+    float: right;
+}
+
+.block2 {
+  width: 300px;
+  height: 900px;
+  background: #000;
+  float: left;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background: #ff2a72;
+}
+
+.boll {
+  width: 20px;
+  height: 20px;
+  background: #0f5;
+  position: absolute;
+  border-radius: 10px;
+  left: 10px;
+  right: 10px;
+
+}

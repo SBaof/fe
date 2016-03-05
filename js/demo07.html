@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      div {}
+    </style>
+
+    <script>
+      window.onload = function() {
+        var btn = document.getElementById('btn');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var div = document.getElementById('div');
+        var ckb = div.getElementsByTagName('input');
+
+        btn.onclick = function() {
+          for (var i=0; i<ckb.length; i++) {
+            ckb[i].checked = true;
+          }
+        }
+        btn1.onclick = function() {
+          for (var i=0; i<ckb.length; i++) {
+            ckb[i].checked = false;
+          }
+        }
+
+        btn2.onclick = function() {
+          for (var i=0; i<ckb.length; i++) {
+            if (ckb[i].checked == true) {
+              ckb[i].checked = false;
+            }
+            else {
+              ckb[i].checked = true;
+            }
+          }
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <input id='btn' type="button" value="all">
+    <input id='btn1' type="button" value="none">
+    <input id='btn2' type="button" value="oth"><br>
+
+    <div id='div'>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+      <input type="checkbox" value="xxx"><br>
+    </div>
+  </body>
+</html>

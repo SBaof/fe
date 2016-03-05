@@ -1,8 +1,25 @@
-
-.first {
-  color: blue;
+body {
+  background: #fefefe;
+  margin: 0;
 }
 
-.second {
-  color: red;
+.header {
+  background: #1b39ab;
+  height: 100px
+}
+
+.wrapper {
+  width: 960px;
+  height: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  margin: 10px auto;
+}
+
+.inwrapper {
+  width: 480px;
+  height: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  margin: 50px auto;
 }

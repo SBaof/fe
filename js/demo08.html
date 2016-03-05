@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      #div1 .active {background: yellow;}
+      #div1 div {width: 200px; height: 200px; background: #ccc; border: 1px solid black; margin: 1px; display: none;}
+    </style>
+    <script>
+      window.onload = function() {
+        var oDiv = document.getElementById('div1');
+        var aBtn = oDiv.getElementsByTagName('input');
+        var aDiv = oDiv.getElementsByTagName('div');
+        var index = 0;
+
+        for (var i=0; i<aBtn.length; i++) {
+          aBtn[i].index = i;
+          aBtn[i].onclick = function() {
+            for (var j=0; j<aBtn.length; j++) {
+              aBtn[j].className = '';
+              aDiv[j].style.display = 'none';
+            }
+            this.className = 'active';
+            aDiv[this.index].style.display = 'block';
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id='div1'>
+      <input type="button" value="edu" />
+      <input type="button" value="sing" />
+      <input type="button" value="PE" />
+      <input type="button" value="English" />
+      <div>111111111</div>
+      <div>222222222</div>
+      <div>333333333</div>
+      <div>444444444</div>
+    </div>
+  </body>
+</html>

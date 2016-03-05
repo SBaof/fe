@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #div1 {width: 200px; height: 200px; border:1px solid black;}
+  </style>
+  <script>
+    window.onload = function() {
+      var btn1 = document.getElementById('btn1');
+      var btn2 = document.getElementById('btn2');
+      var btn3 = document.getElementById('btn3');
+
+        btn1.onmousedown = function() {
+          change('width', '500px');
+        }
+        btn2.onclick=xxx;
+    }
+    function change(action, value) {
+      var div1 = document.getElementById('div1');
+      div1.style[action] = value;
+      alert(div1.style[action]);
+    }
+    function xxx() {
+      alert("asdf");
+    }
+  </script>
+</head>
+<body>
+  <!-- <input id='btn1' type="button" value="toWidth" onclick="change('width', '400px')"> -->
+  <input id='btn1' type="button" value="toWidth">
+  <input id='btn2' type="button" value="toheigth" onclick="change('height', '400px')">
+  <input id='btn3' type="button" value="changeColor" onclick="change('background', 'red')">
+  <div id="div1"></div>
+</body>
+</html>
